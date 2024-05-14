@@ -7,10 +7,93 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.contact-form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px;
+  color: black;
+  text-align: left;
+}
+
+.contact-form {
+  margin-bottom: 20px;
+}
+
+.contact-form div {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #61dafb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #21a1f1;
+}
+
+.submitted-data {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.submitted-data h2 {
+  margin-bottom: 15px;
+}
+
+.submitted-data p {
+  margin: 5px 0;
+}
+
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
 .App-header {
@@ -24,15 +107,24 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.vertical-nav {
+  width: 200px; /* Adjust width as needed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111; /* Dark background */
+  padding-top: 20px;
+  height: 100%; /* Full height */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.vertical-nav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+}
+
+.vertical-nav a:hover {
+  background-color: #575757;
 }
